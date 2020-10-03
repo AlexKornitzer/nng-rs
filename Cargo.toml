@@ -22,5 +22,8 @@ build-nng = ["nng-sys/build-nng"]
 ffi-module = []
 
 [dependencies]
-nng-sys = "1.2.4-rc.1"
+nng-sys = "1.3.2-rc.1"
 log = "0.4"
+
+[patch.crates-io]
+nng-sys = { git = "https://github.com/alexkornitzer/nng-sys.git" }
